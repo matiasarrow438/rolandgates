@@ -140,7 +140,7 @@
             margin-top: 0.8rem;
         }
 
-        .buy-button, .dex-button {
+        .buy-button, .dex-button, .discord-button {
             background: linear-gradient(45deg, var(--primary), var(--secondary));
             color: black;
             padding: 0.5rem 1.2rem;
@@ -150,20 +150,23 @@
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s;
-            width: 150px; /* Set fixed width for both buttons */
+            width: 150px;
         }
 
         .dex-button {
             background: linear-gradient(45deg, #2193b0, #6dd5ed);
         }
 
-        .buy-button:hover, .dex-button:hover {
-            transform: scale(1.05);
-            box-shadow: 0 0 30px rgba(0, 255, 136, 0.3);
+        .discord-button {
+            background: linear-gradient(45deg, #7289da, #99aab5);
         }
 
-        .dex-button:hover {
-            box-shadow: 0 0 30px rgba(33, 147, 176, 0.3);
+        .buy-button:hover, .dex-button:hover, .discord-button:hover {
+            transform: scale(1.05);
+        }
+
+        .discord-button:hover {
+            box-shadow: 0 0 30px rgba(114, 137, 218, 0.3);
         }
 
         /* Animated background elements */
@@ -323,7 +326,10 @@
                     Buy on Jupiter 🚀
                 </button>
                 <button class="dex-button" onclick="window.location.href='https://dexscreener.com/solana/7bwB5BNJ1hyowhcSbmeyK2Av1NVcS5782pEnpGZGpump'">
-                    DexScreener 📈
+                    Chart 📈
+                </button>
+                <button class="discord-button" onclick="window.location.href='https://discord.gg/9EuK9gG8'">
+                    Join Our Discord Community 💬
                 </button>
             </div>
         </div>
