@@ -277,6 +277,75 @@
             border-radius: 50%;
             object-fit: cover;
         }
+
+        /* Mobile Responsive Styles */
+        @media screen and (max-width: 600px) {
+            .container {
+                padding: 1rem;
+                margin: 4.5rem 0.5rem 0.5rem 0.5rem;
+                width: calc(100% - 1rem);
+                min-height: auto;
+            }
+
+            .mascot-wrapper {
+                width: 80px;
+                height: 80px;
+                top: -60px;
+            }
+
+            .hero h1 {
+                font-size: 1.3rem;
+            }
+
+            .hero p {
+                font-size: 0.8rem;
+            }
+
+            .button-group {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
+
+            .buy-button, .dex-button, .discord-button {
+                width: 200px; /* Wider buttons for mobile */
+                font-size: 0.9rem;
+                padding: 0.8rem 1rem;
+            }
+
+            .countdown {
+                padding: 0.8rem;
+            }
+
+            #timer {
+                font-size: 1.4rem;
+            }
+
+            .ca-box {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .ca-box code {
+                font-size: 0.7rem;
+                word-break: break-all;
+                padding: 0.5rem;
+            }
+
+            .copy-button {
+                width: 100%;
+                margin-top: 0.3rem;
+            }
+
+            ol {
+                padding-left: 1.2rem;
+            }
+
+            ol li {
+                font-size: 0.8rem;
+                margin: 0.3rem 0;
+            }
+        }
     </style>
 
     <!-- Add this in the head section -->
